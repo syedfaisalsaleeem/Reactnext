@@ -77,7 +77,7 @@ render(){
 		return(
     <div>
         <nav className="designing">
-            <li className="logo"> CYBER INTELLIGENCE HOUSE  </li>
+            <li className="logo"> <img className="l1" src="logo.png"/>  </li>
             <li className="link1"   onMouseEnter={this.backdropClickHandlert}
                onMouseLeave={this.backdropClickHandlerf}
    > Exposed Information </li>
@@ -190,6 +190,11 @@ render(){
 
             </div>
           <style jsx>{`
+            .l1{
+                margin-top:0px;
+                width:300px;
+                height:40px;
+            }
 .designing{
   background: black;
   display: flex;
@@ -297,6 +302,8 @@ align-items: center;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
+  position:absolute;
+  width:100%;
 }
 .seating{
     width:35px;
@@ -345,6 +352,9 @@ align-items: center;
   justify-content:space-evenly;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
+    position:absolute;
+  width:100%;
+  margin-top:70px;
 }
 
 
@@ -372,6 +382,9 @@ align-items: center;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
+      position:absolute;
+  width:100%;
+  margin-top:70px;
 }
 
 
@@ -387,7 +400,7 @@ align-items: center;
   text-transform:uppercase;
   font-weight:400;
   width: 180px;
-  height:70px;
+  height:60px;
   opacity: 0.8;
   list-style:none;
      

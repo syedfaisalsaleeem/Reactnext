@@ -11,4 +11,9 @@ const Index =() => (
 <main>
 <Navigation/> 
 
-<Landingcon
+<Landingcontent/>
+
+</main>
+</div>
+	)
+export default Index;

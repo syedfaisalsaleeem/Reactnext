@@ -6,8 +6,15 @@ class Cpright extends React.Component{
 	}
 render(){
 	return(
-		<div>
-		<p> Copyright 2020 © Cyber Intelligence House</p>
+		<div >
+		<p className="footer"> Copyright 2020 © Cyber Intelligence House</p>
+		
+		<style jsx>{`
+
+
+
+
+			`}</style>
 		</div>
 		);
 

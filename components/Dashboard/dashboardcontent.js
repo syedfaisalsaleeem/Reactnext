@@ -20,7 +20,7 @@ render(){
                 </div>
                 <div className="div1in2">
                 <div className="dac1">
-                    
+                    <ExposureTrends/>
                 </div>
                 <div className="dac2">
 

@@ -20,7 +20,7 @@ const Index =() => (
 	<a>faisal</a>
 </Link>
 <Footer/>
-<Navigation/> 
+<Dashboardheading/>
 </main>
 </div>
 	)

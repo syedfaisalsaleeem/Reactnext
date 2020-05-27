@@ -56,7 +56,7 @@ render(){
     return(
         <div>
     <HighchartsReact
-      highcharts={Highcharts}
+      
       options={this.state.options}
     />
 

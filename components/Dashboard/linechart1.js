@@ -74,10 +74,7 @@ class LineChart1 extends React.Component{
 render(){
     return(
         <div>
-    <HighchartsReact
-      highcharts={Highcharts}
-      options={options}
-    />
+
 
         </div>
     )

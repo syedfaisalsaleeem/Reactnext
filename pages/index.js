@@ -16,11 +16,9 @@ const Index =() => (
 <Navigation/> 
 
 <Landingcontent/>
-<Link href="/dashboardpage">
-	<a>faisal</a>
-</Link>
+
 <Footer/>
-<Dashboardheading/>
+
 </main>
 </div>
 	)

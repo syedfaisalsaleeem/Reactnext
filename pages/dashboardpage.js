@@ -20,7 +20,7 @@ render(){
             <main>
             <Navigation/> 
             <Dashboardheading/>
-            
+            <Dashboardcontent/>
             <Footer/>
             </main>
         </div>

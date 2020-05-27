@@ -2,6 +2,7 @@ import Navigation from '../components/navigation';
 import Footer from '../components/footer';
 import Landingcontent from '../components/landingcontent';
 import Head from 'next/head';
+import Link from 'next/link';
 const Index =() => (
 <div>
 <Head>
@@ -12,6 +13,9 @@ const Index =() => (
 <Navigation/> 
 
 <Landingcontent/>
+<Link href="/dashboardpage">
+	<a>faisal</a>
+</Link>
 <Footer/>
 </main>
 </div>

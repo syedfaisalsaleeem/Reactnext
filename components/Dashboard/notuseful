@@ -1,0 +1,47 @@
+const Progress =({done})=>
+{
+    const[style,setStyle]=React.useState({});
+    setTimeout(()=>
+    {
+        const newStyle={
+            opacity:1,
+            width:'${done}%'
+        }
+        setStyle(newStyle);
+    },1000);
+    return(
+        <div className="progress">
+            <div className="progress-done" style={style}>
+                {done}%
+            </div>
+        <style jsx>
+            {`
+            .progress {
+                background-color: #eee;
+                width: 40rem;
+                height: 2rem;
+                border-radius: 10rem;
+                margin-bottom: 3rem;
+    
+            }
+            .progress-bar {
+                background: linear-gradient(to right, #F2709C, #FF9472);
+                width: 90%;
+                height: 100%;
+                border-radius: 10rem;
+                color: #fff;
+                
+                opacity: 0;
+                transition: .5;
+                
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+            }
+            `}
+        </style>
+        
+        </div>
+    )
+
+}

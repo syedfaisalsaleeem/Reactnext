@@ -1,6 +1,6 @@
 import React,{Component} from 'react';
 import Link from 'next/link';
-import Alertsdropdown from "./alertsdropdown.js"
+import Assets from "./assets.js"
 import { Icon } from 'semantic-ui-react'
 class Navigation extends React.Component{
 	constructor(props){
@@ -8,7 +8,8 @@ class Navigation extends React.Component{
         this.state={
             show:false,
             showa:false,
-            showb:false
+            showb:false,
+            showc:false
         }
         this.backdropClickHandlert=this.backdropClickHandlert.bind(this)
         this.backdropClickHandlerf=this.backdropClickHandlerf.bind(this)
@@ -39,6 +40,13 @@ class Navigation extends React.Component{
       backdropClickHandler2 =() => {
     this.setState((prevState) => {
             return {showb: !prevState.showb};        
+    });
+
+
+  };
+  backdropClickHandler3 =() => {
+    this.setState((prevState) => {
+            return {showc: !prevState.showc};        
     });
 
 
@@ -78,11 +86,14 @@ render(){
     <div>
         <nav className="designing">
             <li className="logo"> <img className="l1" src="logo.png"/>  </li>
-            <li className="link1"   onMouseEnter={this.backdropClickHandlert}
-               onMouseLeave={this.backdropClickHandlerf}
-   > Exposed Information </li>
-
-            <li className="link2"> Assets </li>
+            <Link href="/dashboardpage">
+            <li className="link1"   onMouseEnter={this.backdropClickHandlert} onMouseLeave={this.backdropClickHandlerf}> 
+               Exposed Information 
+            </li>
+            </Link>
+            <li className="link2"
+             onMouseEnter={this.backdropClickHandler3}
+             onMouseLeave={this.backdropClickHandler3}> Assets </li>
             <li className="link3"> Support </li>
             <li className="spacer"></li>
             <Link href="/" ><a><img src="usericon.png" className="userlogo"/></a></Link>
@@ -92,9 +103,11 @@ render(){
           <div className="dropdown-content"      style={{display:this.state.show?"flex":"none"}}
           onMouseEnter={this.backdropClickHandlert}   onMouseLeave={this.backdropClickHandlerf}    >
           <li className="spacer1"></li>
-            <a href="#" className="dashboards">
+          <Link href="/dashboardpage">
+            <a  className="dashboards">
             <img src="squares.png"/><p>DASHBOARDS</p>
             </a>
+          </Link>  
             <a href="#">
 <img src="search.png" className="search"/>
 <pre> </pre>
@@ -189,6 +202,7 @@ render(){
 
 
             </div>
+            <Assets call={this.state.showc} c={this.backdropClickHandler3}/>
           <style jsx>{`
             .l1{
                 margin-top:0px;
@@ -200,6 +214,7 @@ render(){
   display: flex;
   flex-direction: row;
   align-items: center;
+  
   width:100%;
   
   
@@ -245,7 +260,7 @@ flex-basis:50%;
 }
 .link2{
     display: flex;
-    width:70px;
+    width:75px;
     font-family: "Gilroy", sans-serif;
   font-size: 15px;
   border-bottom:3px solid transparent;
@@ -331,8 +346,8 @@ align-items: center;
 
 
 .link1:hover {border-bottom:3px solid #0076ff; cursor: pointer;}
-
-
+.link2:hover {border-bottom:3px solid #0076ff; cursor: pointer;}
+.link3:hover {border-bottom:3px solid #0076ff; cursor: pointer;}
 .dashboards{
   display: flex;
   flex-direction: row;
@@ -417,7 +432,19 @@ text-decoration:none;
 }
 .d1:hover {color: black;cursor: pointer;}
 .d2:hover {color: black;cursor: pointer;}
- @media (max-width: 1024px) {
+ @media (max-width: 1044px) {
+   .designing{
+     width:100%;
+   }
+   .dropdown-content{
+    width:100%;
+   }
+   .dropdown-content1{
+    width:100%;
+   }
+   .dropdown-content3{
+    width:100%;
+   }
     .designing .link1 {
         display: none;
         
@@ -428,8 +455,20 @@ text-decoration:none;
     .designing .link3 {
         display: none;
     }
-}
 
+}
+ @media (max-width: 604px) {
+   .designing{
+     width:100%;
+   }
+
+  }
+  @media (max-width: 304px) {
+    .designing{
+      width:100%;
+    }
+ 
+   }
 
 }         
 

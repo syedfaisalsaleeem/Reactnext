@@ -1,5 +1,5 @@
 import Navigation from '../components/navigation';
-import Cpright from '../components/cpright';
+import Footer from '../components/footer';
 import Landingcontent from '../components/landingcontent';
 import Head from 'next/head';
 const Index =() => (
@@ -12,7 +12,7 @@ const Index =() => (
 <Navigation/> 
 
 <Landingcontent/>
-
+<Footer/>
 </main>
 </div>
 	)

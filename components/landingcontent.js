@@ -90,36 +90,47 @@ class Landingcontent extends React.Component{
 
 			</div>
 			<div className="needhelp">
-				<h1> Need help? </h1>
-				<pre>You can get analyst support using our<br/>
-				online chat or organise a call to our expert.
-				</pre>
+				<div className="needhelp1">
+					<h1> Need help? </h1>
+					<p>You can get analyst support using our<br/>
+					online chat or organise a call to our expert.
+					</p>
+				</div>
 				<button className="btnsuccess">Support</button>
 			</div>
 
-			<div  className="footer">
-			<p> Copyright 2020 © Cyber Intelligence House</p>
-			</div>
+
 			<style jsx>{`
 
 				.btnsuccess {
-  border: 2px solid black;
-  background-color: white;
-  color: black;
-  padding: 14px 28px;
-  font-size: 16px;
-  cursor: pointer;
-}
+				border: 2px solid black;
+				background-color: white;
+				color: black;
+				padding: 14px 28px;
+				font-size: 16px;
+				cursor: pointer;
+				}
 
-.btnsuccess:hover{
-	  border-color: gray;
-  	color: gray;
-}
+				.btnsuccess:hover{
+	  				border-color: gray;
+  					color: gray;
+						}
+				.needhelp1{
+							display:flex;
+							flex-direction:column;
+							width:100%;
+							
+							height:200px;
+							
+		
+						}
 				.needhelp{
-					position:relative;
-					margin-left:100px;
-					height:200px;
 					
+					position:relative;
+					
+					height:400px;
+					margin-top:40px;
+					margin-left:50px;
 
 				}
 				.m5 a{
@@ -142,10 +153,6 @@ class Landingcontent extends React.Component{
 					margin-left:15px;
 					margin-top:30px;
 					width:90%;
-				}
-				.m1{
-
-
 				}
 				.m1 >p{
 					line-height: 10px;
@@ -184,17 +191,9 @@ class Landingcontent extends React.Component{
 
 
 				}
-					.footer{
-					  position: relative;
-					  left: 0;
-					  bottom: 0;
-					  width: 100%;
-					  margin-left:80px;
-					  color: gray;
-					  text-align: left;
-				}
-				}
-			}
+
+				
+			
 				.main1{
 
 					display:flex;
@@ -203,7 +202,7 @@ class Landingcontent extends React.Component{
 					margin-top:80px;
 					align-items:center;
 					justify-content:center;
-					flex-wrap: wrap;
+					
 					
 
 
@@ -214,6 +213,7 @@ class Landingcontent extends React.Component{
 					background:white;
 					height:350px;
 					width:350px;
+					margin-left:10px;
 					 border: 0.5px solid #dddfe6;;
 					 box-shadow: 0 20px 60px 0 rgba(163, 171, 186, 0);
 					
@@ -221,7 +221,7 @@ class Landingcontent extends React.Component{
 				.c2{
 					display:flex;
 					width:350px;
-					margin-left:20px;
+					margin-left:10px;
 					background:white;
 					height:350px;
 					 margin-top:60px;
@@ -232,34 +232,30 @@ class Landingcontent extends React.Component{
 				.c3{
 					display:flex;
 					width:350px;
-					margin-left:20px;
+					margin-left:10px;
 					background:white;
 					height:350px;
 					 margin-top:60px;
 					 border: 0.5px solid #dddfe6;;
 					 box-shadow: 0 20px 60px 0 rgba(163, 171, 186, 0);
 				}
-				 @media (max-width: 1044px) {
-				    .footer {
-				          position: relative;
-						  left: 0;
-						  bottom: -200;
-						  width: 100%;
-						  
-				        
-				    }
+				 @media (max-width: 1100px) {
+
+					.c1{
+						margin-left:0px;
+					}
 				    .main1{
 				    display:flex;
-					flex-direction:row;
-					height:1500px;
+					flex-direction:column;
+					height:1400px;
 					margin-top:80px;
 					align-items:center;
 					justify-content:space-around;
-					flex-wrap: wrap;
+					width:100%;
 					
 				    }
 
-}
+					}
 				`}</style>
 
 			</div>

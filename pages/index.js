@@ -21,9 +21,6 @@ const Index =() => (
 </Link>
 <Footer/>
 <Navigation/> 
-            <Dashboardheading/>
-            <Dashboardcontent/>
-            <Footer/>
 </main>
 </div>
 	)

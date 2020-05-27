@@ -3,6 +3,9 @@ import Footer from '../components/footer';
 import Landingcontent from '../components/landingcontent';
 import Head from 'next/head';
 import Link from 'next/link';
+import Dashboardheading from '../components/Dashboard/dashboardheading';
+import Dashboardcontent from '../components/Dashboard/dashboardcontent';
+
 const Index =() => (
 <div>
 <Head>
@@ -17,6 +20,10 @@ const Index =() => (
 	<a>faisal</a>
 </Link>
 <Footer/>
+<Navigation/> 
+            <Dashboardheading/>
+            <Dashboardcontent/>
+            <Footer/>
 </main>
 </div>
 	)
